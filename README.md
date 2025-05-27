@@ -34,7 +34,7 @@ USB Power source
 
 5 volt power is supplied to the ESP8266 via USB connection.
 
-Temperature/Humidity Sensor pins:
+Temperature/Humidity Sensor pins are connected to the esp8266 as follows:
 
 1. VCC to esp8266 Vcc (5v)
 2. GND to esp8266 GND
@@ -58,10 +58,9 @@ To implement it in HA, open the file editor to mqtt.yaml, and enter the followin
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/mqtt_yaml.jpg)
 
-
 Save the file and Navigate to the Developer Tools section. Reload the "All YAML Configuration.
 
-open the dashboard User Interface (Lovelace in my case) to create a gauge card:
+Open the dashboard User Interface (Lovelace in my case) to create a gauge card for temperature and another for humidity:
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/HA_guage_card.jpg)
 
