@@ -56,7 +56,7 @@ c. ThinngSpeak credentials
 
 ## Home Assistant Setup (optional)
 
-As an option, this project interfaces with Home Assistant (HA) via topic "device1/temperature" and "device1/humidity".
+As an option, this project publishes to Home Assistant (HA) via topic "device1/temperature" and "device1/humidity".
 
 To implement it in HA, open the file editor to mqtt.yaml, and enter the following under the sensor section:
 
@@ -77,6 +77,18 @@ Select DONE to display the result:
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/HA.jpg)
 
 ## ThingSpeak Setup (Optional)
+
+As an option, this project publishes to ThingSpeak.
+
+### To implement it in ThingSpeak, configure a new channnel named Device1 (or some other name) and save it.
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_channel_settings.jpg)
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_channels.jpg)
+
+### Creaate a temperature guage widget
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_temperature_guage_config.jpg)
+
+### Create a humidity guage widget
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_humidity_guage_config.jpg)
 
 ## Procedure
 
