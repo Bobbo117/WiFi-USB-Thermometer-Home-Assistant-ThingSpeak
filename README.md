@@ -12,11 +12,14 @@ c. ThingSpeak.com
 
 ## Hardware Overview
 The microcontroller and temperature/humidity sensor fit inside a USB stick enclosure to create the device.  A short cable provides access to USB power.
-
-(image)
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/Exploded_View.jpg)
 
 ## Hardware Components
 Microcontroller (Wemos LOLIN D1 Mini ESP8266) 
+
+![image](https://github.com/user-attachments/assets/deb7757e-022d-40d1-9cd0-f9b4820fb36a)
+
+![image](https://github.com/user-attachments/assets/30f0dc68-d9a5-49dc-9d5f-92cf92265db8)
 
 Temperature/Humidity Sensor (AHT10, BME280, DHT11, 21, 22, or SHT20)
 
@@ -25,6 +28,17 @@ Enclosure
 USB cable or adapter
 
 USB Power source
+
+# Hardware Connections
+
+5 volt power is supplied to the ESP8266 via USB connection.
+
+Temperature/Humidity Sensor pins:
+
+1. VCC to esp8266 Vcc (5v)
+2. GND to esp8266 GND
+3. SCL to esp8266 D1
+4. SCA to esp8D1266 
 
 ## Software
 The USB software is written in C++ using the Arduino IDE.  You need to add the following to the code to interface with Home Assistant in ThinkSpeak:
