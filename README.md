@@ -42,7 +42,7 @@ The components are available from multiple sources.  Best prices are from AliExp
 
 ### USB cable or adapter
 
-### USB Power source - several are available.  I prefer the Aiken because the usb socked is parallel to the wall:
+### USB Power source - several are available.  I prefer the Aiken because the usb socket is parallel to the wall:
 
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/power_adapters.jpg)
