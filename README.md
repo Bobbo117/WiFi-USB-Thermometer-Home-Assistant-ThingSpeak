@@ -11,7 +11,8 @@ b. Home Assistant via MQTT protocol
 c. ThingSpeak.com
 
 ## Hardware Overview
-The microcontroller and temperature/humidity sensor fit inside a USB stick enclosure to create the device.  A short cable provides access to USB power.
+The microcontroller and temperature/humidity sensor fit inside a USB stick enclosure to create the device.  A short cable provides access to USB power.  Holes at each end of the enclosure allow heat to escape.
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/Exploded_View.jpg)
 
 ## Hardware Components
@@ -38,16 +39,16 @@ Temperature/Humidity Sensor pins:
 1. VCC to esp8266 Vcc (5v)
 2. GND to esp8266 GND
 3. SCL to esp8266 D1
-4. SCA to esp8D1266 
+4. SDA to esp8266 D2 
 
 ## Software
-The USB software is written in C++ using the Arduino IDE.  You need to add the following to the code to interface with Home Assistant in ThinkSpeak:
+The USB software is written in C++ using the Arduino IDE.  You need to add the following to the code to interface with Home Assistant in ThingSpeak:
 
 a. WiFi SSID and password
 
 b. Home Assistant MQTT credentials
 
-c. ThinnkSpeak credentials
+c. ThinngSpeak credentials
 
 ## Home Assistant Setup (optional)
 
