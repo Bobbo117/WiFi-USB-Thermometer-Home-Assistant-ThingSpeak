@@ -81,16 +81,25 @@ Select DONE to display the result:
 As an option, this project publishes to ThingSpeak.
 
 ### To implement it in ThingSpeak, configure a new channnel named Device1 (or some other name) and save it.
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_channel_settings.jpg)
-![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_channels.jpg)
 
 ### Creaate a temperature guage widget
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_temperature_guage_config.jpg)
 
 ### Create a humidity guage widget
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_humidity_guage_config.jpg)
 
-## Procedure
+### The following Screens will be available when it receives data:
+
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_stats.jpg)
+
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_guages.jpg)
+
+
+## Build Procedure
 
 a. Solder connections betwwen the usb8266 and the temperature/humidity sensor but not the rst - D0 link
 
