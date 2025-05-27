@@ -52,6 +52,33 @@ c. ThinngSpeak credentials
 
 ## Home Assistant Setup (optional)
 
+As an option, this project interfaces with Home Assistant (HA) via topic "device1/temperature" and "device1/humidity".
+
+To implement it in HA, open the file editor to mqtt.yaml, and enter the following under the sensor section:
+
+sensor:
+- name: "Device1 Temperature"
+  unique_id: device1_temperature 
+  state_topic: "device1/temperature"
+  qos: 0
+  unit_of_measurement: "F"
+
+- name: "Device1 Humidity"
+  unique_id: device1_humidity 
+  state_topic: "device1/humidity"
+  qos: 0
+  unit_of_measurement: "%"
+  
+Save the file and Navigate to the Developer Tools section. Reload the "All YAML Configuration.
+
+open the dashboard User Interface (Lovelace in my case) to create a gauge card:
+
+image
+
+Create a History Graph Card with the following parameters (or not!):
+
+image
+
 ## ThingSpeak Setup (Optional)
 
 ## Procedure
