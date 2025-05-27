@@ -22,13 +22,17 @@ Microcontroller (Wemos LOLIN D1 Mini ESP8266)
 
 ![image](https://github.com/user-attachments/assets/30f0dc68-d9a5-49dc-9d5f-92cf92265db8)
 
-Temperature/Humidity Sensor (AHT10, BME280, DHT11, 21, 22, or SHT20)
+Temperature/Humidity Sensor (AHT10, BME280, or SHT20)
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/AHT10.jpg)
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/BME280.jpg)
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/SHT20.jpg)
 
 Enclosure
 
 USB cable or adapter
 
 USB Power source
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/power_adapters.jpg)
 
 # Hardware Connections
 
