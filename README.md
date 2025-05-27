@@ -13,26 +13,40 @@ c. ThingSpeak.com
 ## Hardware Overview
 The microcontroller and temperature/humidity sensor fit inside a USB stick enclosure to create the device.  A short cable provides access to USB power.  Holes at each end of the enclosure allow heat to escape.
 
+The components are available from multiple sources.  Best prices are from AliExpress, but the shipping costs are a killer.  Amazon has everything, but in multiple quantities.  Pick your poison.  Get on the Google.
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/Exploded_View.jpg)
 
 ## Hardware Components
-Microcontroller (Wemos LOLIN D1 Mini ESP8266) 
+
+
+### Microcontroller (Wemos LOLIN D1 Mini ESP8266) 
 
 ![image](https://github.com/user-attachments/assets/deb7757e-022d-40d1-9cd0-f9b4820fb36a)
 
 ![image](https://github.com/user-attachments/assets/30f0dc68-d9a5-49dc-9d5f-92cf92265db8)
 
-Temperature/Humidity Sensor (AHT10, BME280, or SHT20)
+
+## Temperature/Humidity Sensor (AHT10, BME280, or SHT20)
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/AHT10.jpg)
+
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/BME280.jpg)
+
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/SHT20.jpg)
 
-Enclosure
 
-USB cable or adapter
+### Enclosure
 
-USB Power source
+### USB cable or adapter
+
+### USB Power source - several are available.  I prefer the Aiken because the usb socked is parallel to the wall:
+
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/power_adapters.jpg)
+
 
 # Hardware Connections
 
@@ -60,41 +74,60 @@ As an option, this project publishes to Home Assistant (HA) via topic "device1/t
 
 To implement it in HA, open the file editor to mqtt.yaml, and enter the following under the sensor section:
 
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/mqtt_yaml.jpg)
+
 
 Save the file and Navigate to the Developer Tools section. Reload the "All YAML Configuration.
 
 Open the dashboard User Interface (Lovelace in my case) to create a gauge card for temperature and another for humidity:
 
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/HA_guage_card.jpg)
+
 
 Create a History Graph Card with the following parameters (or not!):
 
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/HA_history_card.jpg)
+
 
 Select DONE to display the result:
 
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/HA.jpg)
+
 
 ## ThingSpeak Setup (Optional)
 
 As an option, this project publishes to ThingSpeak.
 
+
 ### To implement it in ThingSpeak, configure a new channnel named Device1 (or some other name) and save it.
+
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_channel_settings.jpg)
 
-### Creaate a temperature guage widget
+
+## You will need to record the Channel ID and the write API for the channel.  These are the credentials you need to publish data.
+
+
+
+### Create a temperature guage widget
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_temperature_guage_config.jpg)
 
 ### Create a humidity guage widget
 
+
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_humidity_guage_config.jpg)
 
-### The following Screens will be available when it receives data:
+
+### The following Screens will be available when ThingSpeak receives data:
+
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_stats.jpg)
+
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/ThingSpeak_guages.jpg)
 
