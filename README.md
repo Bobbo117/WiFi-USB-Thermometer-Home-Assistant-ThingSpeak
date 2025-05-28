@@ -156,3 +156,8 @@ Let it run several wakeup cycles connected to your serial monitor.  Verify all s
 
 Enclose it in the enclosre and plug it in somewhere.
 
+## Serial Monitor Printout
+
+The serial monitor list should be similar to the one below, based on selections you made:
+
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/printout.jpg)
