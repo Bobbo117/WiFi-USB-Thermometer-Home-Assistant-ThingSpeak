@@ -1,5 +1,5 @@
 # WiFi-USB-Thermometer-Home-Assistant-ThingSpeak
-Low cost device publishes temperature, humidity to Home Assistant and ThingSpeak
+Low cost device encloses a temperature/humidity sensor in a USB stick capable of publishing to Home Assistant and ThingSpeak
 
 ## Project Description
 This project encloses a temperature/humidity sensor and microcontroller in a USB stick to create a compact device capable of using WiFi to monitor the sensor using any combination of the following options:
