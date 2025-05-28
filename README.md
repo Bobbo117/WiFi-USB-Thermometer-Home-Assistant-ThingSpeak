@@ -158,6 +158,10 @@ Enclose it in the enclosre and plug it in somewhere.
 
 ## Serial Monitor Printout
 
-The serial monitor list should be similar to the one below, based on selections you made:
+The serial monitor list should be similar to the one below, based on selections you made. 
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/printout.jpg)
+
+Notice that there is a temperature variable and a tem variable shown.  The temperature displays the most recent valid temperature.
+If the most recent temperture was invalid, then the tem value displays "--"; otherwise tem = temperature.  The temperature variable is published.
+The same is true of the humidity and hum variables.  This approach keeps the published history graphs in a reasonable range while at the same time providing a debug/verification mechanism.
