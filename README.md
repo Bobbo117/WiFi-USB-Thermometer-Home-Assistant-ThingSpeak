@@ -134,7 +134,7 @@ As an option, this project publishes to ThingSpeak.
 
 ## Build Procedure
 
-a. Solder connections betwwen the usb8266 and the temperature/humidity sensor but not the rst - D0 link
+a. Solder connections betwwen the esp8266 and the temperature/humidity sensor but not the rst - D0 link
 
 b. Apply the applicable WIFI, MQTT, and ThinkSpeak credentials and adjust the compile time parameters accordingly
 
