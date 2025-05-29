@@ -42,7 +42,11 @@ The components are available from multiple sources.  Best prices are from AliExp
 
 ### USB cable or adapter
 
-### USB Power source - several are available.  I prefer the Aiken because the usb socket is parallel to the wall:
+
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/USB_to_micro.jpg)
+
+
+### USB Power source - several are available.  I prefer the Ailken because the usb socket is parallel to the wall:
 
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/power_adapters.jpg)
@@ -154,7 +158,7 @@ When everything is working as it should, solder a link to D0 and RST on the ESP8
 
 Let it run several wakeup cycles connected to your serial monitor.  Verify all systems are as expected.
 
-Enclose it in the enclosre and plug it in somewhere.
+Enclose it in the enclosure and plug it in somewhere.
 
 ## Serial Monitor Printout
 
