@@ -158,7 +158,7 @@ When everything is working as it should, solder a link to D0 and RST on the ESP8
 
 Let it run several wakeup cycles connected to your serial monitor.  Verify all systems are as expected.
 
-Enclose it in the enclosure and plug it in somewhere.
+Enclose it in the enclosure and plug it in somewhere.  Sit back and say "Ahhh".
 
 ## Serial Monitor Printout
 
@@ -166,6 +166,10 @@ The serial monitor list should be similar to the one below, based on selections 
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/printout.jpg)
 
-Notice that there is a temperature variable and a tem variable shown.  The temperature displays the most recent valid temperature.
+There is a temperature variable and a tem variable shown.  The temperature displays the most recent valid temperature.
 If the most recent temperature was invalid, then the tem value displays "--"; otherwise tem = temperature.  The temperature variable is published.
 The same is true of the humidity and hum variables.  This approach keeps the published history graphs in a reasonable range while at the same time providing a debug/verification mechanism.
+
+## Further Discussion
+
+Additional devices can be added by changing the deviceID = 1 statement in the software and the related Home Assistant and ThingSpeak software and credentials.
