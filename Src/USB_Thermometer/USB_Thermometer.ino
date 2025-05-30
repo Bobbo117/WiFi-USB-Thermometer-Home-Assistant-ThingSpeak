@@ -391,6 +391,7 @@ void sleep(uint64_t seconds)
 
 void setup()
 {
+  delay(200);
   Serial.begin(115200);    // Initialize the serial monitor
   delay(2000);             // Give user time open the Serial Monitor if chosen
   Serial.println(VERSION); // Print the application and Version
