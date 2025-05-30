@@ -10,8 +10,14 @@ b. Home Assistant via MQTT protocol
 
 c. ThingSpeak.com
 
+## Applications
+
+Use this anywhere you want to monitor temerature and humidity.. your home, empty house, garage, etc. that has electrical power and internet.  
+
+If there is no internet at the place you want to monitor, consider my Ambient HUB project, which monitors via ioT cellular for less than $2 /per month for the ioT SIM card.
+
 ## Hardware Overview
-The microcontroller and temperature/humidity sensor fit inside a USB stick enclosure to create the device.  A short cable provides access to USB power.  Holes at each end of the enclosure allow heat to escape.
+The microcontroller and temperature/humidity sensor fit inside a USB stick enclosure to create the device.  A short cable or a USB to MicroUSB adapter provides access to USB power.  Holes at each end of the enclosure allow heat to escape.
 
 The components are available from multiple sources.  Best prices are from AliExpress, but the shipping costs are a killer.  Amazon has everything, but in multiple quantities.  Pick your poison.  Get on the Google.
 
