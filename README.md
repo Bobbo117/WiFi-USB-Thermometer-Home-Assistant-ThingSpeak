@@ -14,8 +14,9 @@ c. ThingSpeak.com
 
 Use this anywhere you want to monitor temerature and humidity.. your home, empty house, garage, etc. that has electrical power and internet.  
 
-If there is no internet at the place you want to monitor, consider my Ambient HUB project https://github.com/Bobbo117/Cellular-IoT-Monitor, which monitors via ioT cellular for less than $2 /per month for the ioT SIM card.
+If there is no internet at the place you want to monitor, consider this ![Cellular ioT Monitor project](https://github.com/Bobbo117/Cellular-IoT-Monitor), which monitors via ioT cellular for less than $2 /per month for the ioT SIM card.
 
+ ![here](https://github.com/Bobbo117/Cellular-IoT-Monitor/blob/main/doc/Cellular%20IoT%20Homewatch.pdf)
 ## Hardware Overview
 The microcontroller and temperature/humidity sensor fit inside a USB stick enclosure to create the device.  A short cable or a USB to MicroUSB adapter provides access to USB power.  Holes at each end of the enclosure allow heat to escape.
 
