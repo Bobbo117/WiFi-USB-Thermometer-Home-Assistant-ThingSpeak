@@ -4,11 +4,11 @@ Low cost device encloses a temperature/humidity sensor in a USB stick capable of
 ## Project Description
 This project encloses a temperature/humidity sensor and microcontroller in a USB stick to create a compact device capable of using WiFi to monitor the sensor using any combination of the following options:
 
-a. Computer via USB to Arduino IDE
+1. Computer via USB to Arduino IDE
 
-b. Home Assistant via MQTT protocol
+2. Home Assistant via MQTT protocol
 
-c. ThingSpeak.com
+3. ThingSpeak.com
 
 ## Applications
 
@@ -69,15 +69,35 @@ Temperature/Humidity Sensor pins are connected to the esp8266 as follows:
 3. SCL to esp8266 D1
 4. SDA to esp8266 D2 
 
+After the system has operation has been confirmed, solder a jumper to connect the D0 and RST pins.  This will anable the processor to wake up based on the timer.  New software cannot be uploaded while the jumper is connected.
+
 ## Software
-The USB software is written in C++ using the Arduino IDE.  You need to add the following to the code to interface with Home Assistant in ThingSpeak:
+The USB software is written in C++ using the Arduino IDE.  You need to edit the following code to interface with Home Assistant in ThingSpeak:
 
-a. WiFi SSID and password
+1. WiFi SSID and password
 
-b. Home Assistant MQTT credentials
+2. Home Assistant MQTT credentials
 
-c. ThinngSpeak credentials
+3. ThinngSpeak credentials
 
+There are additional compile time parameters to select the option above which you want to activate.  These are documented in the software.
+
+The software operates as follows:
+
+1. On startup, the setup() procedure:
+   - activates the serial monitor to report each step for debug purposes (see below at the end)
+   - turns on the on-board LED
+   - initializes the sensors
+   - establishes communication with the publish destinations
+   - turns off the board LED and hands off control to the loop() procedure
+
+2. The loop() procedure:
+   - reads the sensors
+   - publishes the results
+   - initiates a state of deep sleep for the number of minutes in the sleepMinutes variable to minimize heat generation.
+  
+3. When the processor awakens, it starts over at the setup() procedure.
+   
 ## Home Assistant Setup (optional)
 
 As an option, this project publishes to Home Assistant (HA) via topic "device1/temperature" and "device1/humidity".
@@ -144,19 +164,19 @@ As an option, this project publishes to ThingSpeak.
 
 ## Build Procedure
 
-a. Solder connections betwwen the esp8266 and the temperature/humidity sensor but not the rst - D0 link
+1. Solder connections betwwen the esp8266 and the temperature/humidity sensor but not the rst - D0 link
 
-b. Apply the applicable WIFI, MQTT, and ThinkSpeak credentials and adjust the compile time parameters accordingly
+2. Apply the applicable WIFI, MQTT, and ThinkSpeak credentials and adjust the compile time parameters accordingly
 
-c. Compile and upload the software
+3. Compile, upload and run the software
 
-d. Open the serial monitor
+4. Open the serial monitor
 
-e. Verify the serial monitor list looks like the one below, based on selections you made
+5. Verify the serial monitor list looks like the one below, based on selections you made
 
-f. Verify the data made it to Home Assistant and ThingSpeak as expected
+6. Verify the data made it to Home Assistant and ThingSpeak as expected
 
-g. Note that the device will only restart if the reset button is pushed; it will not wake up on its own yet
+7. Note that the device will only restart if the reset button is pushed; it will not wake up on its own yet
 
 ## Final Steps
 
