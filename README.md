@@ -69,7 +69,7 @@ Temperature/Humidity Sensor pins are connected to the esp8266 as follows:
 3. SCL to esp8266 D1
 4. SDA to esp8266 D2 
 
-After the system has operation has been confirmed, solder a jumper to connect the D0 and RST pins.  This will anable the processor to wake up based on the timer.  New software cannot be uploaded while the jumper is connected.
+After the system has operation has been confirmed, solder a jumper to connect the D0 and RST pins.  This will enable the processor to wake up based on the timer.  New software cannot be uploaded while the jumper is connected.
 
 ## Software
 The USB software is written in C++ using the Arduino IDE.  You need to edit the following code to interface with Home Assistant in ThingSpeak:
