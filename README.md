@@ -1,5 +1,5 @@
 # WiFi-USB-Thermometer-Home-Assistant-ThingSpeak
-Low cost device encloses a temperature/humidity sensor in a USB stick capable of publishing to Home Assistant and ThingSpeak
+Low cost device encloses a temperature/humidity sensor in a USB stick capable of publishing to Home Assistant and ThingSpeak, without power cords.
 
 ## Project Description
 This project encloses a temperature/humidity sensor and microcontroller in a USB stick to create a compact device capable of using WiFi to monitor the sensor using any combination of the following options:
@@ -8,7 +8,8 @@ This project encloses a temperature/humidity sensor and microcontroller in a USB
 
 2. Home Assistant via MQTT protocol
 
-3. ThingSpeak.com
+3. ThingSpeak.com, a free online IoT analytics service that provides instant visualization and analysis of live data which can send alerts.
+
 
 ## Applications
 
@@ -52,7 +53,7 @@ The components are available from multiple sources.  Best prices are from AliExp
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/USB_to_micro.jpg)
 
 
-### USB Power source - several are available.  I prefer the Ailken because the usb socket is parallel to the wall:
+### USB Power source - several are available.  I prefer the AILKIN because the usb socket is parallel to the wall:
 
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/power_adapters.jpg)
@@ -199,3 +200,14 @@ The same is true of the humidity and hum variables.  This approach keeps the pub
 ## Further Discussion
 
 Additional devices can be added by changing the deviceID = 1 statement in the software and the related Home Assistant and ThingSpeak software and credentials.
+
+## Results
+
+Setting the sleep time to 10 minutes and orienting the USB stick vertically beneath the AILKIN plug results in temperature and humidity readings which match my open air units.
+
+Eliminating power cords and miniaturizing the packaging improves WAF (Wife Approval Factor).
+
+## Conclusions
+
+Replacing those big bulky wired temperature sensors with simple USB sticks looks better and improves your chances of getting lucky more frequently. 
+
