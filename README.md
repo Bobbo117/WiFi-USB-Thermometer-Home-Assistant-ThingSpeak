@@ -213,5 +213,5 @@ Eliminating power cords and miniaturizing the packaging improves WAF (Wife Appro
 
 ## Conclusions
 
-Replacing those big bulky wired temperature sensors with simple USB sticks looks better and improves your wife's demeanor. 
+Replacing those big bulky wired temperature sensors with simple USB sticks looks better and could improve your wife's demeanor. 
 
