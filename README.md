@@ -20,15 +20,13 @@ If there is no internet at the place you want to monitor, consider this ![Cellul
 ## Hardware Overview
 The microcontroller and temperature/humidity sensor fit inside a USB stick enclosure to create the device.  A short cable or a USB to MicroUSB adapter provides access to USB power.  Holes at each end of the enclosure provide ventilation.
 
-The components are available from multiple sources.  Best prices are from AliExpress, but the shipping costs are a killer.  Amazon has everything, but in multiple quantities.  Pick your poison.  Get on the Google.
-
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/Components.jpg)
 
-The project has no unsightly power cords:
+The final configuration presents a clean appearance:
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/Final.jpg)
 
-The following can be displayed on ThingSpeak.com or Home Assistant:
+The temperature and humidity are uploaded to ThingSpeak.com or Home Assistant and are available on your cellphone:
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/HA.jpg)
 
@@ -36,6 +34,7 @@ The following can be displayed on ThingSpeak.com or Home Assistant:
 
 ## Hardware Components
 
+The components are available from multiple sources.  Best prices are from AliExpress, but the shipping costs are a killer.  Amazon has everything, but in multiple quantities.  Pick your poison.  Get on the Google.
 
 ### Microcontroller (Wemos LOLIN D1 Mini ESP8266) 
 
