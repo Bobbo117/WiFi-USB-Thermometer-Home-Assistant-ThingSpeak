@@ -209,5 +209,5 @@ Eliminating power cords and miniaturizing the packaging improves WAF (Wife Appro
 
 ## Conclusions
 
-Replacing those big bulky wired temperature sensors with simple USB sticks looks better and improves your chances of getting lucky more frequently. 
+Replacing those big bulky wired temperature sensors with simple USB sticks looks better and improves your wife's demeanor. 
 
