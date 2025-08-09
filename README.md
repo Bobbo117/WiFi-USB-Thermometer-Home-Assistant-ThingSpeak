@@ -24,9 +24,15 @@ The components are available from multiple sources.  Best prices are from AliExp
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/Components.jpg)
 
-This is the project final result:
+The project has no unsightly power cords:
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/Final.jpg)
+
+The following can be displayed on ThingSpeak.com or Home Assistant:
+
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/HA.jpg)
+
+
 
 ## Hardware Components
 
