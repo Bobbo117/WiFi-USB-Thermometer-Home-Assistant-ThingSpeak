@@ -1,6 +1,9 @@
 
-#define VERSION "USB Thermometer v2025_0526"
+#define VERSION "USB Thermometer v2025_0801"
 
+/*
+ * 8/1 add DS DS18B20 temperaure probe
+ */
 /*     IMPORTANT:
     1. Read project description at https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak
        This software is designed for the LOLIN(Wemos) D1 mini esp8266.
