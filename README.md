@@ -18,11 +18,15 @@ Use this anywhere you want to monitor temerature and humidity.. your home, empty
 If there is no internet at the place you want to monitor, consider this ![Cellular ioT Monitor project](https://github.com/Bobbo117/Cellular-IoT-Monitor), which monitors via ioT cellular for less than $2 /per month for the ioT SIM card.
 
 ## Hardware Overview
-The microcontroller and temperature/humidity sensor fit inside a USB stick enclosure to create the device.  A short cable or a USB to MicroUSB adapter provides access to USB power.  Holes at each end of the enclosure allow heat to escape.
+The microcontroller and temperature/humidity sensor fit inside a USB stick enclosure to create the device.  A short cable or a USB to MicroUSB adapter provides access to USB power.  Holes at each end of the enclosure provide ventilation.
 
 The components are available from multiple sources.  Best prices are from AliExpress, but the shipping costs are a killer.  Amazon has everything, but in multiple quantities.  Pick your poison.  Get on the Google.
 
 ![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/Components.jpg)
+
+This is the project final result:
+
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/Final.jpg)
 
 ## Hardware Components
 
@@ -199,7 +203,7 @@ The same is true of the humidity and hum variables.  This approach keeps the pub
 
 ## Further Discussion
 
-Additional devices can be added by changing the deviceID = 1 statement in the software and the related Home Assistant and ThingSpeak software and credentials.
+Additional devices can be added by incrementing the deviceID = 1 statement in the software and the related Home Assistant and ThingSpeak software and credentials.
 
 ## Results
 
