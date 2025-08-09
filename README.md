@@ -22,7 +22,7 @@ The microcontroller and temperature/humidity sensor fit inside a USB stick enclo
 
 The components are available from multiple sources.  Best prices are from AliExpress, but the shipping costs are a killer.  Amazon has everything, but in multiple quantities.  Pick your poison.  Get on the Google.
 
-![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/Exploded_View.jpg)
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/Components.jpg)
 
 ## Hardware Components
 
