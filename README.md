@@ -102,6 +102,16 @@ The software operates as follows:
    - initiates a state of deep sleep for the number of minutes in the sleepMinutes variable to minimize heat generation.
   
 3. When the processor awakens, it starts over at the setup() procedure.
+
+## Serial Monitor Printout
+
+The serial monitor list should be similar to the one below, based on selections you made. 
+
+![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/printout.jpg)
+
+There is a temperature variable and a tem variable shown.  The temperature displays the most recent valid temperature.
+If the most recent temperature was invalid, then the tem value displays "--"; otherwise tem = temperature.  The temperature variable is published.
+The same is true of the humidity and hum variables.  This approach keeps the published history graphs in a reasonable range while at the same time providing a debug/verification mechanism.
    
 ## Home Assistant Setup (optional)
 
@@ -177,7 +187,7 @@ As an option, this project publishes to ThingSpeak.
 
 4. Open the serial monitor
 
-5. Verify the serial monitor list looks like the one below, based on selections you made
+5. Verify the serial monitor list looks like the one above, based on selections you made
 
 6. Verify the data made it to Home Assistant and ThingSpeak as expected
 
@@ -190,16 +200,6 @@ When everything is working as it should, solder a link to D0 and RST on the ESP8
 Let it run several wakeup cycles connected to your serial monitor.  Verify all systems are as expected.
 
 Enclose it in the enclosure and plug it in somewhere.  Sit back and say "Ahhh".
-
-## Serial Monitor Printout
-
-The serial monitor list should be similar to the one below, based on selections you made. 
-
-![image](https://github.com/Bobbo117/WiFi-USB-Thermometer-Home-Assistant-ThingSpeak/blob/main/Images/printout.jpg)
-
-There is a temperature variable and a tem variable shown.  The temperature displays the most recent valid temperature.
-If the most recent temperature was invalid, then the tem value displays "--"; otherwise tem = temperature.  The temperature variable is published.
-The same is true of the humidity and hum variables.  This approach keeps the published history graphs in a reasonable range while at the same time providing a debug/verification mechanism.
 
 ## Further Discussion
 
